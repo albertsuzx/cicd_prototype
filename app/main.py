@@ -87,6 +87,11 @@ def predict(data: Data):
         return {"prediction": "error"}
 
 
+@app.get("/")
+def welcome():
+    return {"message":"Welcome to EC-fastapi-pipeline"}
+
+
 if __name__ == '__main__':
 
     fastapi_logger.info('****************** Starting Server *****************')
